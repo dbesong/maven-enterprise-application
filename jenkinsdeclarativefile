@@ -16,7 +16,7 @@ pipeline{
       steps{
        sh "echo validate, compile and perform UnitTesting"
        sh "echo UnitTesting must passed for artifacts to be created"
-       sh "mvn clean package"
+       sh "mvn clean package -pl MavenEnterpriseApp-ear"
       }
 
     }
